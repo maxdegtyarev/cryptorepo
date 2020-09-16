@@ -3,7 +3,8 @@
 
 #include <QString>
 #include <QList>
-#include <bitint.h>
+
+#include <headers/bitint.h>
 
 
 const QString SEPARATOR = " ";

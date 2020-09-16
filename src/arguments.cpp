@@ -1,4 +1,4 @@
-#include "arguments.h"
+#include <headers/arguments.h>
 #include <QDebug>
 
 unsigned Arguments::i() const

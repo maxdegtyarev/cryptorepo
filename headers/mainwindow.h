@@ -21,11 +21,7 @@ private slots:
 
     void on_btn_setUnsetBit_clicked();
 
-
-
     void on_btn_swapBit_clicked();
-
-
 
     void on_btn_zeroBits_clicked();
 

@@ -20,15 +20,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
-    bitint.cpp \
-    arguments.cpp
+    src/arguments.cpp \
+    src/bitint.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    bitint.h \
-    arguments.h
+    headers/arguments.h \
+    headers/bitint.h \
+    headers/mainwindow.h
 
 FORMS += \
         mainwindow.ui
