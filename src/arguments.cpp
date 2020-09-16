@@ -1,5 +1,4 @@
 #include <headers/arguments.h>
-#include <QDebug>
 
 unsigned Arguments::i() const
 {
@@ -44,8 +43,6 @@ void Arguments::parse(const QString &params) {
 
         QString variable = splittedCommand.first();
         QString value = splittedCommand.back();
-
-        qDebug() << variable << value;
 
         if (variable == "value") {
             this->_value = BitInt(value);
