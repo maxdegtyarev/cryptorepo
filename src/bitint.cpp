@@ -51,6 +51,10 @@ BitInt BitInt::zeroBits(const unsigned len) {
     return BitInt( _value & ( ~1u << len ) );
 }
 
+unsigned BitInt::getBit(const unsigned bit) {
+    return ( ( _value >> bit ) & 1);
+}
+
 BitInt BitInt::xorBit_h(const unsigned bit, const unsigned val) {
     return xorBit( bit - 1, val );
 }

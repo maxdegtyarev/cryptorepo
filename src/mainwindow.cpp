@@ -3,7 +3,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 
-
+const QString msgTitle = "Информация";
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -25,7 +25,7 @@ void MainWindow::on_btn_getKBit_clicked()
                             toPlainText()
                    );
 
-    QMessageBox().information(this, "Информация", QString().number( args.value().getBit_h(args.k() ) ) );
+    QMessageBox().information(this, msgTitle, QString().number( args.value().getBit_h(args.k() ) ) );
 }
 
 void MainWindow::on_btn_setUnsetBit_clicked()
@@ -36,7 +36,7 @@ void MainWindow::on_btn_setUnsetBit_clicked()
                             toPlainText()
                    );
 
-    QMessageBox().information(this, "Информация", QString().number( args.value().xorBit_h(args.k()).getValue(), 2));
+    QMessageBox().information(this, msgTitle, QString().number( args.value().xorBit_h(args.k()).getValue(), 2));
 }
 
 
@@ -48,7 +48,7 @@ void MainWindow::on_btn_swapBit_clicked()
                             toPlainText()
                    );
 
-    QMessageBox().information(this, "Информация", QString().number( args.value().swapBit_h(
+    QMessageBox().information(this, msgTitle, QString().number( args.value().swapBit_h(
                                                                         args.i(), args.j()).getValue(), 2 ));
 }
 
@@ -62,5 +62,5 @@ void MainWindow::on_btn_zeroBits_clicked()
                             toPlainText()
                    );
 
-    QMessageBox::information(this, "Информация", QString().number( args.value().zeroBits_h(args.m()).getValue(), 2 ));
+    QMessageBox::information(this, msgTitle, QString().number( args.value().zeroBits_h(args.m()).getValue(), 2 ));
 }

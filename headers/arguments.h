@@ -26,9 +26,13 @@ public:
     void parse(const QString& params);
 
     unsigned i() const;
+
     unsigned j() const;
+
     unsigned m() const;
+
     unsigned k() const;
+
     BitInt value() const;
 };
 

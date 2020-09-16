@@ -28,9 +28,7 @@ public:
 
     BitInt zeroBits(const unsigned len);
 
-    unsigned getBit(const unsigned bit) {
-        return ( ( _value >> bit ) & 1);
-    }
+    unsigned getBit(const unsigned bit);
 
     /*
      * Поскольку пользователь не знает, что у нас биты нумеруются с нуля, то мы будем вычитать единицу
